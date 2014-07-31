@@ -1,6 +1,6 @@
 <?php
 
-namespace CanalTP\SamBridgeBundle\Permission;
+namespace CanalTP\SamCoreBridgeBundle\Permission;
 
 use CanalTP\SamEcoreApplicationManagerBundle\Permission\AbstractBusinessPermissionModule;
 

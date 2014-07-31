@@ -1,6 +1,6 @@
 <?php
 
-namespace CanalTP\SamBridgeBundle\Component;
+namespace CanalTP\SamCoreBridgeBundle\Component;
 
 use CanalTP\SamEcoreApplicationManagerBundle\Component\AbstractBusinessComponent;
 use CanalTP\SamEcoreApplicationManagerBundle\Permission\BusinessPermissionManagerInterface;

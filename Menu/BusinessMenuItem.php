@@ -1,6 +1,6 @@
 <?php
 
-namespace CanalTP\SamBridgeBundle\Menu;
+namespace CanalTP\SamCoreBridgeBundle\Menu;
 
 use CanalTP\SamEcoreApplicationManagerBundle\Menu\AbstractBusinessMenuItem;
 

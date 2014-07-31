@@ -1,7 +1,7 @@
 parameters:
-    sam.business_component.sam.class: CanalTP\SamBridgeBundle\Component\BusinessComponent
-    sam.business_module.sam.class: CanalTP\SamBridgeBundle\Permission\BusinessPermissionModule
-    sam.business_permission_manager.sam.class: CanalTP\SamBridgeBundle\Permission\BusinessPermissionManager
+    sam.business_component.sam.class: CanalTP\SamCoreBridgeBundle\Component\BusinessComponent
+    sam.business_module.sam.class: CanalTP\SamCoreBridgeBundle\Permission\BusinessPermissionModule
+    sam.business_permission_manager.sam.class: CanalTP\SamCoreBridgeBundle\Permission\BusinessPermissionManager
 
 services:
     sam.business_module.sam:
