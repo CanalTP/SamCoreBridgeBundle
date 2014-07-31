@@ -1,20 +1,20 @@
 parameters:
-    sam.business_component.sam.class: CanalTP\SamCoreBridgeBundle\Component\BusinessComponent
-    sam.business_module.sam.class: CanalTP\SamCoreBridgeBundle\Permission\BusinessPermissionModule
-    sam.business_permission_manager.sam.class: CanalTP\SamCoreBridgeBundle\Permission\BusinessPermissionManager
+    sam.business_component.samcore.class: CanalTP\SamCoreBridgeBundle\Component\BusinessComponent
+    sam.business_module.samcore.class: CanalTP\SamCoreBridgeBundle\Permission\BusinessPermissionModule
+    sam.business_permission_manager.samcore.class: CanalTP\SamCoreBridgeBundle\Permission\BusinessPermissionManager
 
 services:
-    sam.business_module.sam:
-        class: "%sam.business_module.sam.class%"
+    sam.business_module.samcore:
+        class: "%sam.business_module.samcore.class%"
         arguments: ['%sam.permissions%']
         public: false
 
-    sam.business_permission_manager.sam:
-        class: "%sam.business_permission_manager.sam.class%"
-        arguments: ['@sam.business_module.sam']
+    sam.business_permission_manager.samcore:
+        class: "%sam.business_permission_manager.samcore.class%"
+        arguments: ['@sam.business_module.samcore']
         public: false
 
-    sam.business_component.sam:
-        class: "%sam.business_component.sam.class%"
-        arguments: ['@sam.business_permission_manager.sam', @service_container]
+    sam.business_component.samcore:
+        class: "%sam.business_component.samcore.class%"
+        arguments: ['@sam.business_permission_manager.samcore', @service_container]
         public: false

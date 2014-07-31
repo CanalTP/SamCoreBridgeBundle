@@ -4,7 +4,7 @@ namespace CanalTP\SamCoreBridgeBundle\Component;
 
 use CanalTP\SamEcoreApplicationManagerBundle\Component\AbstractBusinessComponent;
 use CanalTP\SamEcoreApplicationManagerBundle\Permission\BusinessPermissionManagerInterface;
-use CanalTP\SamBridgeBundle\Menu\BusinessMenuItem;
+use CanalTP\SamCoreBridgeBundle\Menu\BusinessMenuItem;
 
 /**
  * Description of BusinessComponent
