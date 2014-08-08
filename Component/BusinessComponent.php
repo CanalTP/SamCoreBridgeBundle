@@ -36,6 +36,11 @@ class BusinessComponent extends AbstractBusinessComponent
 
     public function getMenuItems()
     {
+        $client = new BusinessMenuItem();
+        $client->setAction('#');
+        $client->setName('Client');
+        $client->setRoute('sam_client_list');
+        
         $user = new BusinessMenuItem();
         $user->setAction('#');
         $user->setName('Utilisateur');
@@ -64,6 +69,10 @@ class BusinessComponent extends AbstractBusinessComponent
         
         if ($this->container->get('security.context')->isGranted('BUSINESS_MANAGE_PERMISSION')) {
             $menu[] = $perm;
+        }
+        
+        if ($this->container->get('security.context')->isGranted('BUSINESS_MANAGE_CLIENT')) {
+            $menu[] = $client;
         }
 
         return $menu;
