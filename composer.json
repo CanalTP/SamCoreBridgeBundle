@@ -14,7 +14,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2",
-        "canaltp/sam-core-bundle": "dev-master"
+        "canaltp/sam-core-bundle": "dev-IUS-259-create-client"
     },
     "autoload": {
         "psr-4": { "CanalTP\\SamCoreBridgeBundle\\": "" }
