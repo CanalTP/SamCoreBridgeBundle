@@ -39,8 +39,8 @@ class BusinessComponent extends AbstractBusinessComponent
         $client = new BusinessMenuItem();
         $client->setAction('#');
         $client->setName('Client');
-        $client->setRoute('sam_client_list');
-        
+        $client->setRoute('sam_customer_list');
+
         $user = new BusinessMenuItem();
         $user->setAction('#');
         $user->setName('Utilisateur');
@@ -50,7 +50,7 @@ class BusinessComponent extends AbstractBusinessComponent
         $role->setAction('#');
         $role->setName('Role');
         $role->setRoute('sam_role');
-        
+
         $perm = new BusinessMenuItem();
         $perm->setAction('#');
         $perm->setName('Permission');
@@ -61,16 +61,16 @@ class BusinessComponent extends AbstractBusinessComponent
             || $this->container->get('security.context')->isGranted('BUSINESS_MANAGE_USER')) {
             $menu[] = $user;
         }
-        
+
         if ($this->container->get('security.context')->isGranted('BUSINESS_VIEW_ROLE')
             || $this->container->get('security.context')->isGranted('BUSINESS_MANAGE_ROLE')) {
             $menu[] = $role;
         }
-        
+
         if ($this->container->get('security.context')->isGranted('BUSINESS_MANAGE_PERMISSION')) {
             $menu[] = $perm;
         }
-        
+
         if ($this->container->get('security.context')->isGranted('BUSINESS_MANAGE_CLIENT')) {
             $menu[] = $client;
         }
