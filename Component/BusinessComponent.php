@@ -55,6 +55,11 @@ class BusinessComponent extends AbstractBusinessComponent
         $perm->setAction('#');
         $perm->setName('Permission');
         $perm->setRoute('sam_security_business_right_edit');
+        
+        $navIo = new BusinessMenuItem();
+        $navIo->setAction('#');
+        $navIo->setName('Navitia.io');
+        $navIo->setRoute('nmm_navitiaio_user');
 
         $menu = array();
         if ($this->container->get('security.context')->isGranted('BUSINESS_VIEW_USER')
@@ -73,6 +78,10 @@ class BusinessComponent extends AbstractBusinessComponent
 
         if ($this->container->get('security.context')->isGranted('BUSINESS_MANAGE_CLIENT')) {
             $menu[] = $client;
+        }
+        
+        if ($this->container->get('security.context')->isGranted('BUSINESS_MANAGE_NAVITIA_USER')) {
+            $menu[] = $navIo;
         }
 
         return $menu;
