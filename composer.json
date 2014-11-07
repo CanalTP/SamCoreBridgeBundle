@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Symfony CanalTPSamCoreBridgeBundle",
     "keywords": ["Sam", "Core", "bridge"],
-    "homepage": "http://hg.prod.canaltp.fr/Sam/SamCoreBridgeBundle.git",
+    "homepage": "https://github.com/CanalTP/SamCoreBridgeBundle",
     "license": "proprietary",
     "authors": [
         {
