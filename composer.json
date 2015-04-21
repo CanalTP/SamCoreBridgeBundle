@@ -4,16 +4,36 @@
     "description": "Symfony CanalTPSamCoreBridgeBundle",
     "keywords": ["Sam", "Core", "bridge"],
     "homepage": "https://github.com/CanalTP/SamCoreBridgeBundle",
-    "license": "proprietary",
+    "license": "AGPLv3",
     "authors": [
+        {
+            "name": "Rémy Abi-Khalil",
+            "email": "remy.abikhalil@canaltp.fr"
+        },
         {
             "name": "Kévin ZIEMIANSKI",
             "email": "kevin.ziemianski@canaltp.fr"
+        },
+        {
+            "name": "David QUINTANEL",
+            "email": "david.quintanel@canaltp.fr"
+        },
+        {
+            "name": "David NEGRELLO",
+            "email": "david.negrello@canaltp.fr"
+        },
+        {
+            "name": "Thomas CHEVILY",
+            "email": "thomas.chevily@canaltp.fr"
+        },
+        {
+            "name": "Arnaud OGIELA",
+            "email": "arnaud.ogiela@canaltp.fr"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.2"
+        "php": ">=5.3.2",
+        "canaltp/sam-core-bundle": "0.5.1"
     },
     "autoload": {
         "psr-4": { "CanalTP\\SamCoreBridgeBundle\\": "" }
